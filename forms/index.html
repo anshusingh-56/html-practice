@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms Practice</title>
+</head>
+
+<body>
+
+    <h1>Student Registration Form</h1>
+
+    <form>
+
+        <!-- Text Input -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <br><br>
+
+        <!-- Email Input-->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <br><br>
+
+        <!-- Password Input-->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+        <br><br>
+
+        <!-- Number Input -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Enter your age" min="1" max="100" required> 
+
+        <br><br>
+
+        <!-- Date Input-->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <br><br>
+
+        <!-- Radio Buttons -->
+        <p>Gender:</p>
+           
+        <input type="radio" id="male" name="gender" value="male" required> 
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female" required> 
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="other" required> 
+        <label for="other">Other</label>
+
+        <br><br>
+
+        <!-- Checkbox -->
+        <p>Skills:</p>
+           
+        <input type="checkbox" id="html" name="skills" value="html"> 
+        <label for="html">HTML</label>
+
+        <input type="checkbox" id="css" name="skills" value="css"> 
+        <label for="css">CSS</label>
+
+        <input type="checkbox" id="javascript" name="skills" value="javascript"> 
+        <label for="javascript">JavaScript</label>
+
+        <br><br>
+
+        <!-- Select Dropdown -->
+        <label for="course">Select Course:</label>
+
+        <select id="course" name="course">
+
+            <option value="">Choose a course</option>
+            <option value="btech">B.Tech</option>
+            <option value="bca">BCA</option>
+            <option value="bsc">B.Sc</option>
+
+        </select>
+
+        <br><br>
+
+        <!-- Textarea -->
+        <label for="message">About Yourself:</label>
+
+        <br>
+
+        <textarea id="message" name="message" rows="5" cols="30" placeholder="Write Something about yourself"></textarea>
+
+        <br><br>
+
+        <!-- File Input -->
+        <label for="file">Upload Resume:</label>
+
+        <input type="file" id="file" name="file">
+
+        <br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+
+        <!-- Reset Button -->
+        <button type="reset">Reset</button>
+
+    </form>
+    
+</body>
+</html>
